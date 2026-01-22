@@ -30,7 +30,6 @@ struct my_list_simple
             return;
         
         }
-        
         node* aux = head;
         for(; aux->next != NULL && x > aux->next->value; aux = aux->next);
 
@@ -62,6 +61,7 @@ struct my_list_simple
 
         node* aux = head;
         for(; aux->next != NULL && x > aux->next->value; aux = aux->next);
+        
         if(aux == head && aux->value >= x)
         {
             if(aux->value == x)
